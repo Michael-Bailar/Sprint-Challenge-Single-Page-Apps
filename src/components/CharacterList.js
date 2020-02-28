@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 
+import styled from "styled-components";
+
+const CardContainer = styled.div`
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+`
+
 export default function CharacterList(props) {
   
 
@@ -21,9 +31,8 @@ export default function CharacterList(props) {
 
 
   return (
-    <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+    <CardContainer className="character-list">
       <CharacterCard charData={charData} key={charData.id}/>
-    </section>
+    </CardContainer>
   );
 }
