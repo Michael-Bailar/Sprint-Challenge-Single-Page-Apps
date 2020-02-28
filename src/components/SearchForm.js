@@ -8,7 +8,7 @@ const StyledSearchForm = styled.div`
   margin-bottom:5%;
 `
 
-const SearchForm = ({values, status}) => {
+const SearchForm = ({values, status, query, handleInputChange}) => {
     
     const [chars, setChars] = useState([]);
 
@@ -24,6 +24,8 @@ const SearchForm = ({values, status}) => {
                     <Field 
                         id="name"
                         type="text"
+                        value={query}
+                        onChange={handleInputChange}
                         name="name"
                         placeholder="name"
                     />
