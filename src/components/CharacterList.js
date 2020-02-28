@@ -13,6 +13,25 @@ const CardContainer = styled.div`
   width: 100%;
 `
 
+const PaginationContainer = styled.div`
+  display:flex;
+  width:50%;
+  justify-content:center;
+  margin-left:25%;
+  margin-bottom:5%;
+`
+
+const PaginationLinks = styled.div`
+margin-left: 5%;
+margin-right: 5%;
+border:1px solid black;
+width: 50px;
+text-align: center;
+`
+
+
+
+
 export default function CharacterList(props) {
   
 
@@ -67,11 +86,11 @@ function handleNextClick(e){
   return (
   <div>
     <SearchForm handleInputChange={handleInputChange} query={query}/>
-    <div className="pagination-container">
-            <div className="next-button" onClick={handleBackClick}>Back</div>
+    <PaginationContainer className="pagination-container">
+            <PaginationLinks className="next-button" onClick={handleBackClick}>Back</PaginationLinks>
             <div>Page: {pageNumber}</div>
-            <div className="back-button" onClick={handleNextClick}>Next</div>
-        </div>
+            <PaginationLinks className="back-button" onClick={handleNextClick}>Next</PaginationLinks>
+      </PaginationContainer>
     <CardContainer className="character-list">
       
       <CharacterCard charData={charData} key={charData.id}/>
