@@ -16,17 +16,28 @@ export default function CharacterList(props) {
   
 
   const [charData, setCharData] = useState([]);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     axios
     .get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
     .then(response => {
-      setCharData(response.data.results);
+    
+      const chars = response.data.results.filter
+      (character => 
+        character.name.toLowerCase().includes
+        (query.toLowerCase())
+      );
+      console.log(chars)
+
+
+      setCharData(chars);
+
     })
     .catch(err => {
       console.log(err);
     });
-  }, []);
+  }, [query]);
 
 
 
