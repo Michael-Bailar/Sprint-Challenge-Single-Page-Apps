@@ -113,7 +113,7 @@ Complete search component to your list views.
 - [ ]  Add error handling for all async (axios/AJAX) calls. (Including some styled UI.)
 - [ ]  Add a "details view" and route to show more details for each type of record. (Hint: Look into route parameters or nested routes.)
     - [ ]  Similar to the "details view" now with a UI twist: use a [modal](https://react.semantic-ui.com/modules/modal/#variations-size) component to show item view. (If you can, build [modal with routes](https://codesandbox.io/s/react-router-modal-gallery-classes-example-z98l5).)
-- [ ]  Add [paging support](https://react.semantic-ui.com/addons/pagination/#types-pagination) (next/previous links.)
+- [x]  Add [paging support](https://react.semantic-ui.com/addons/pagination/#types-pagination) (next/previous links.)
 - [ ]  Refactor to use as few Components as possible - while still readable to a React Dev. (Hint: research these patterns: HoC, render props, FaaC.)
 - [ ]  Add additional fields to search form. They are unique for each endpoint. See **[Available parameters**.](https://rickandmortyapi.com/documentation/#filter-characters), etc..
 - [ ]  Use the [GraphQL Endpoint](https://rickandmortyapi.com/documentation/#graphql) with multiple search fields.
@@ -124,9 +124,9 @@ Complete search component to your list views.
 
 > Follow these steps to complete your project:
 
-- [ ]  Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
-- [ ]  Add your TL as a Reviewer on the Pull Request.
-- [ ]  TL then will count the HW as done by merging the branch into master.
+- [x]  Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
+- [x]  Add your TL as a Reviewer on the Pull Request.
+- [x]  TL then will count the HW as done by merging the branch into master.
 
 <!-- TLs: NOTE: use resources to coach, or share over zoom - avoid sharing entire solution folder. Share preview links if available. -->
 
